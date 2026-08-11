@@ -1,0 +1,8 @@
+{
+  "name": "سَنَد",
+  "description": "منصة سَنَد الذكية لإدارة وتوجيه مشاريع التخرج بأسلوب فخم وحداثي مستوحى من السدو بألوان داكنة وذهبية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
