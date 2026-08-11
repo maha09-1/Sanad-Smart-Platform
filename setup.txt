@@ -1,0 +1,67 @@
+LOCAL SETUP
+
+Frontend and Backend connection setup and successful connection testing.
+
+
+1. POWERSHELL - EXECUTION POLICY
+
+To bypass restrictions for running scripts and external tools in the VS Code Terminal:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+2. EXTERNAL SERVER SETUP
+
+File: vite.config.ts
+
+The following property was added inside the server section to allow requests from external hosts without blocking:
+
+server: {
+  allowedHosts: true as const
+}
+
+
+3. INSTALL PACKAGES AND RUN LOCAL SERVER
+
+npm install
+
+npm run dev
+
+
+NOTE:
+
+The website runs locally on:
+
+http://localhost:3000
+
+
+The APIs were tested successfully:
+
+/api
+/api/interests
+/api/notifications
+
+Response status:
+
+200 OK
+
+
+4. REMOTE WEBSITE TESTING
+
+Tunneling Tools
+
+
+LocalTunnel:
+
+npx localtunnel --port 3000
+
+Requires entering the public IP for verification.
+
+
+Pinggy:
+
+The tool used for quick testing:
+
+npx pinggy -L 3000
+
+Creates a direct link without requiring IP input.
